@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-:root {
-  --clr: #bcbcbc;
+img {
+  width: 100%;
 }
 
 body {
@@ -60,26 +60,25 @@ body {
   align-items: center;
 }
 
-.ball {
-  width: clamp(1em, 5vw, 7em);
-  height: clamp(1em, 5vw, 7em);
-  background: var(--clr);
+.potion {
+  width: clamp(1em, 8vw, 15em);
+  height: clamp(1em, 8vw, 15em);
   border-radius: 50%;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  animation: beat 1.5s infinite ease-in-out;
+
+  animation: float 1.5s infinite ease-in-out;
 }
 
 /* Animation */
 
-@keyframes beat {
+@keyframes float {
   0% {
-    transform: scale(1);
+    transform: translatey(0);
   }
   50% {
-    transform: scale(1.11);
+    transform: translatey(-8px);
   }
   100% {
-    transform: scale(1);
+    transform: translatey(0);
   }
 }
 
@@ -99,9 +98,9 @@ body {
     display: none;
   }
 
-  .ball {
-    width: min(5em, 9vw);
-    height: min(5em, 9vw);
+  .potion {
+    width: min(7em, 9vw);
+    height: min(7em, 9vw);
   }
 }
 
@@ -122,9 +121,9 @@ body {
   .c {
     display: none;
   }
-  .ball {
-    width: min(8vw, 13vw);
-    height: min(8vw, 13vw);
+  .potion {
+    width: min(12vw, 14vw);
+    height: min(12vw, 14vw);
   }
 }
 
@@ -146,7 +145,7 @@ body {
   .c {
     display: grid;
   }
-  .ball {
+  .potion {
     height: 12vw;
     width: 12vw;
   }
