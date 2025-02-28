@@ -31,3 +31,27 @@ cd potion-wand
 
 # Open index.html in your browser
 open index.html
+```
+
+## Usage
+
+1. Open the `index.html` file in your browser.
+2. Move your mouse across the page to see the cursor tracking effect in action.
+3. Observe the interactive SVG icons responding to cursor movement.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`feature/your-feature-name`).
+3. Commit your changes.
+4. Push to your branch.
+5. Open a pull request.
+
+For major changes, please open an issue first to discuss what you'd like to change.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
