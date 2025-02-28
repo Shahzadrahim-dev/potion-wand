@@ -18,7 +18,7 @@ This project demonstrates cursor tracking using **HTML**, **CSS**, and **JavaScr
 
 ## Live Demo
 
-Check out the live demo here: [Potion Wand Cursor Tracking](https://github.com/Shahzadrahim-dev/potion-wand)
+Check out the live demo here: [Potion Wand Cursor Tracking](https://shahzadrahim-dev.github.io/potion-wand/)
 
 ## Installation
 
