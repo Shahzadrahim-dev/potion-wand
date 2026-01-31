@@ -18,8 +18,8 @@ body {
   height: 100vh;
   padding: 1.2em 2.5em;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  /* grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr; */
   gap: 2em;
   grid-template-areas:
     "a a c c b b f f"
@@ -84,27 +84,7 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 1300px) {
-  .container {
-    padding: 1.2em 1.5em;
-    grid-template-areas:
-      "a a c c b b b b"
-      "a a c c b b b b"
-      "a a c c d d d d"
-      "e e e e d d d d"
-      "e e e e d d d d";
-  }
-  .f {
-    display: none;
-  }
-
-  .potion {
-    width: min(7em, 9vw);
-    height: min(7em, 9vw);
-  }
-}
-
-@media (max-width: 1100px) {
+@media (max-width: 1850px) {
   .container {
     grid-template-areas:
       "a a a a b b b b"
@@ -113,7 +93,7 @@ body {
       "e e e e d d d d"
       "e e e e d d d d";
 
-    column-gap: 1.5em;
+    gap: 2.5em;
   }
   .f {
     display: none;
@@ -127,10 +107,9 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .container {
     padding: 1.2em 1.2em;
-    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
       "c c c c b b b b"
       "c c c c b b b b"
